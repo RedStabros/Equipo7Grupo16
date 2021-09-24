@@ -20,7 +20,11 @@
         <div class="contenedor baner">
             <img src="img/hamburguesa.svg" alt="" class="hamburger">
             <nav class="menu-navegacion">
+<<<<<<< HEAD
                 <a href="/html/usuarios.html" class="nav-menu-link" target="_self">Modulo de Usuarios</a>
+=======
+                <a href="#" class="nav-menu-link" target="_self">Modulo de Usuarios</a>
+>>>>>>> d2411f4de3015707d02c9a89fcc1b48a98c7adae
                 <a href="#" target="_self" class="nav-menu-link">Modulo de Clientes</a>
                 <a href="#" target="_self" class="nav-menu-link">Modulo de Proveedores</a>
                 <a href="#" target="_self" class="nav-menu-link">Modulo de Productos</a>
@@ -42,7 +46,11 @@
                 <br> Modulos del sistema
              </h2>
              <div class="galeria-modulos">                
+<<<<<<< HEAD
                 <a href="/html/usuarios.html"><img src="img/user1.png" alt="" class="img-galeria-modulos"></a>
+=======
+                <img src="img/user1.png" alt="" class="img-galeria-modulos">
+>>>>>>> d2411f4de3015707d02c9a89fcc1b48a98c7adae
                 <img src="img/cliente1.png" alt="" class="img-galeria-modulos">
                 <img src="img/proveedores.png" alt="" class="img-galeria-modulos">
                 <img src="img/productos.png" alt="" class="img-galeria-modulos">
