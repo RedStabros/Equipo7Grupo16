@@ -11,12 +11,16 @@
 <title>Tecno Gamer</title>
 <link rel="stylesheet" href="css/estilo.css">
 <link rel="icon" href="img/logoico.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="js/login.js"></script>
 </head>
 <body>
 	<div class="container mt-4 col-lg-4">
             <div class="card col-sm-10"  id="contenedor">
                 <div class="card-body">
-                    <form class="form-sign" method="get" action="./LoginServlet">
+                    <form class="form-sign">
                         <div class="form-group text-center">
                             <h2>ACCESO</h2>
                             <img src="img/LOGO_PNG.png" alt="370" width="370"/>
@@ -26,14 +30,16 @@
                         <div class="form-group">
                          	<br>
                             <label>Usuario:</label>
-                            <input type="text" name="txtuser" class="form-control">                            
+                           <%-- <input type="text" name="txtuser" class="form-control" Id="usuario" value="">      --%>   
+                              <td><input Id="usuario" type="text" value="" class="form-control"></td>                 
                         </div>
                         <div class="form-group">
                             <label>Password:</label>
-                            <input type="password" name="txtpass" class="form-control">
+                           <%-- <input type="password" name="txtpass" class="form-control" Id="clave" value="">--%>  
+                           <td><input Id="clave" type="text" value="" class="form-control"></td>
                             <br>
                         </div>
-                        <input type="submit" name="accion" value="Ingresar" class="btn btn-primary btn-block">
+                        <input type="button" value="Enviar" id="btn_Enviaru" class="btn btn-primary btn-block">
                     </form>
                 </div>
             </div>

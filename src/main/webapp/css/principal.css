@@ -1,0 +1,259 @@
+@charset "ISO-8859-1";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(70, 69, 69);
+}
+
+.contenedor {
+    width: 80%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 40px 0;
+    padding-left: 1%;
+    padding-right: 1%;
+
+}
+
+.baner {
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    height: 35vh;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.titulo {
+    font-size: 50px;
+    padding-left: 10%;
+    color: black;
+    cursor: pointer;
+}
+
+.slogan {
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 20%;
+    color: black;
+}
+
+.hamburger {
+    position: fixed;
+    top: 30px;
+    right: 5px;
+    display: none;
+}
+
+.logo img {
+    height: auto;
+    width: auto;
+    max-height: 200px;
+    max-width: 200px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.nav-toggle {
+    color: rgb(10, 9, 9);
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+    display: none;
+}
+
+.menu-navegacion a {
+    color: white;
+    background-color: #442f1d;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    display: flex;
+    margin: 5px;
+}
+
+.nav-menu-link {
+    border-radius: 5px;
+}
+
+.nav-menu-link:hover {
+    background-color: rgb(238, 95, 28);
+    transition: 0.5s;
+}
+
+.contenido {
+    width: 80%;
+    max-width: 1300px;
+    margin: auto;
+    border-style: solid;
+    border-color: rgb(143, 52, 10);
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.secciones {
+    background-color: white;    
+    flex-wrap: wrap;   
+}
+
+.subtitulo {
+    text-align: center;
+    color: rgb(143, 52, 10);
+}
+
+.galeria-modulos img {
+    height: auto;
+    width: auto;
+    max-height: 300px;
+    max-width: 300px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 70px;
+    margin-right: 40px;
+    justify-content: space-evenly;
+    
+}
+
+.img-galeria-modulos {
+    object-fit: cover;
+    width: 0%;
+    margin-bottom: 0px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    cursor: pointer;
+}
+
+.img-galeria-modulos:hover {
+    -webkit-transform:scale(1.1);transform:scale(1.1);
+    transition: 0.5s;
+}
+
+.line {
+    width: 95%;
+    max-width: 1200px;
+    height: 2px;
+    margin-top: 40px;
+    margin-left: 12%;
+    background-color: rgb(238, 95, 28);
+    margin-bottom: 20px;
+}
+
+.menu-legal a {
+    text-decoration: none;
+    color: rgb(238, 95, 28);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.legal {
+    text-align: center;
+    justify-content: center;
+    color: rgb(238, 95, 28);
+}
+
+@media (max-width: 1400px) {
+
+    .line {
+        width: 70%;
+    }
+
+    .menu-navegacion {
+        width: 90%;
+        margin-right: 10%;
+    }
+
+    .titulo {
+        font-size: 40px;
+    }
+
+    .slogan {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .menu-navegacion {
+        display: none;
+    }
+   
+
+}
+
+@media (max-width: 768px) {
+
+    .titulo {
+        font-size: 30px;
+    }
+
+    .logo img {
+        max-height: 150px;
+        max-width: 150px;
+    }
+
+    .galeria-modulos img {
+        
+        max-height: 250px;
+        max-width: 250px;
+        margin-left: 40px;
+        
+    }
+
+
+
+    .hamburger {
+        display: flex;
+        position: fixed;
+        top: 30px;
+        right: 5px;
+        background:rgb(238, 95, 28);
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        border-radius: 10px;
+        box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    }
+
+    .menu-navegacion {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 35vw;
+        height: 80%;
+        background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        transition: transform .3s ease-in-out;
+        transform: translate(150%);
+        box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    }
+
+    .spread {
+        transform: translate(0);
+    }
+
+    .menu-navegacion a {
+        color: black;
+        background-color: white;
+        padding-left: 5px;
+        padding-right: 5px;
+        text-align: center;
+    }
+
+}
