@@ -21,7 +21,7 @@
             <div class="card col-sm-10"  id="contenedor">
                 <div class="card-body">
                     <form class="form-sign">
-                        <div class="form-group text-center">
+                        <div class="form-group text-center" id="logo">
                             <h2>ACCESO</h2>
                             <img src="img/LOGO_PNG.png" alt="370" width="370"/>
                             
@@ -36,7 +36,7 @@
                         <div class="form-group">
                             <label>Password:</label>
                            <%-- <input type="password" name="txtpass" class="form-control" Id="clave" value="">--%>  
-                           <td><input Id="clave" type="text" value="" class="form-control"></td>
+                           <td><input Id="clave" type="password" value="" class="form-control"></td>
                             <br>
                         </div>
                         <input type="button" value="Enviar" id="btn_Enviaru" class="btn btn-primary btn-block">

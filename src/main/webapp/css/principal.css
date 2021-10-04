@@ -34,6 +34,7 @@ header {
     margin-right: 10%;
     border-radius: 5px;
     margin-bottom: 15px;
+    margin-top: 10px;
 }
 
 .titulo {
@@ -143,13 +144,13 @@ header {
 }
 
 .line {
-    width: 95%;
-    max-width: 1200px;
+    width: 85%;
+    max-width: 1000px;
     height: 2px;
     margin-top: 40px;
-    margin-left: 12%;
     background-color: rgb(238, 95, 28);
     margin-bottom: 20px;
+    margin-left: 25%;
 }
 
 .menu-legal a {

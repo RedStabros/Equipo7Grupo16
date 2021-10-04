@@ -20,12 +20,12 @@
         <div class="contenedor baner">
             <img src="img/hamburguesa.svg" alt="" class="hamburger">
             <nav class="menu-navegacion">
-                <a href="/html/usuarios.html" class="nav-menu-link" target="_self">Modulo de Usuarios</a>
-                <a href="#" target="_self" class="nav-menu-link">Modulo de Clientes</a>
-                <a href="#" target="_self" class="nav-menu-link">Modulo de Proveedores</a>
-                <a href="#" target="_self" class="nav-menu-link">Modulo de Productos</a>
-                <a href="#" target="_self" class="nav-menu-link">Modulo de Ventas</a>
-                <a href="#" target="_self" class="nav-menu-link">Consultas y Reportes</a>
+                <a href="html/usuarios.html" class="nav-menu-link" target="_self">Modulo de Usuarios</a>
+                <a href="html/clientes.html" target="_self" class="nav-menu-link">Modulo de Clientes</a>
+                <a href="html/proveedores.html" target="_self" class="nav-menu-link">Modulo de Proveedores</a>
+                <a href="html/productos.html" target="_self" class="nav-menu-link">Modulo de Productos</a>
+                <a href="html/ventas.html" target="_self" class="nav-menu-link">Modulo de Ventas</a>
+                <a href="html/reportes.html" target="_self" class="nav-menu-link">Consultas y Reportes</a>
             </nav>
             <div class="contenedro head">                
 	            <h1 class="titulo">Bienvenido al Sistema</h1>
@@ -42,12 +42,12 @@
                 <br> Modulos del sistema
              </h2>
              <div class="galeria-modulos">
-                <a href="/html/usuarios.html"><img src="img/user1.png" alt="" class="img-galeria-modulos"></a>
-                <img src="img/cliente1.png" alt="" class="img-galeria-modulos">
-                <img src="img/proveedores.png" alt="" class="img-galeria-modulos">
-                <img src="img/productos.png" alt="" class="img-galeria-modulos">
-                <img src="img/user2.png" alt="" class="img-galeria-modulos">
-                <img src="img/reportes1.png" alt="" class="img-galeria-modulos">
+                <a href="html/usuarios.html"><img src="img/user1.png" alt="" class="img-galeria-modulos"></a>
+                <a href="html/clientes.html"><img src="img/cliente1.png" alt="" class="img-galeria-modulos"></a>
+                <a href="html/proveedores.html"><img src="img/proveedores.png" alt="" class="img-galeria-modulos"></a>
+                <a href="html/productos.html"><img src="img/productos.png" alt="" class="img-galeria-modulos"></a>
+                <a href="html/ventas.html"><img src="img/user2.png" alt="" class="img-galeria-modulos"></a>
+                <a href="html/reportes.html"><img src="img/reportes1.png" alt="" class="img-galeria-modulos"></a>
             </div>
          </section>
     </main>

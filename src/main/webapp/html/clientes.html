@@ -12,7 +12,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
 <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-<script src="/js/User.js"></script>
+<script src="/js/Client.js"></script>
 </head>
 <body>
     <header class="header" id="inicio">
@@ -20,7 +20,7 @@
             <img src="/img/hamburguesa.svg" alt="" class="hamburger">
             <nav class="menu-navegacion">
                 <a href="../principal.jsp" class="nav-menu-link" target="_self">Inicio</a>
-                <a href="clientes.html" target="_self" class="nav-menu-link">Modulo de Clientes</a>
+                <a href="usuarios.html" target="_self" class="nav-menu-link">Modulo de Usuarios</a>
                 <a href="proveedores.html" target="_self" class="nav-menu-link">Modulo de Proveedores</a>
                 <a href="productos.html" target="_self" class="nav-menu-link">Modulo de Productos</a>
                 <a href="ventas.html" target="_self" class="nav-menu-link">Modulo de Ventas</a>
@@ -38,7 +38,7 @@
     <main class="contenido">
          <section class="secciones">
              <h1 class="subtitulo">
-                <br> Modulo Usuarios
+                <br> Modulo Clientes
              </h1>
              <div class="contenedor-usuarios">
 				<div>
@@ -58,7 +58,7 @@
                 <td>
                     <!--<input type="button" id="buscarU" value="Buscar">-->
                     <div class="col-auto">
-                        <button type="button" id="buscarU" class="btn btn-success mb-3" value="Buscar">Buscar</button>
+                        <button type="button" id="buscarC" class="btn btn-success mb-3" value="Buscar">Buscar</button>
                     </div>
                     <br>
                 </td>
@@ -86,8 +86,8 @@
                     <!--<td><label for="">Usuario: &nbsp</label></td>
                     <td><input type="text" id="usuario" value=""></td>-->
                     <div class="col-auto">
-                        <label for="" class="visually-hidden">Usuario: </label>
-                        <input type="text" class="form-control form-control-sm" id="usuario" placeholder="Usuario" value="">
+                        <label for="" class="visually-hidden">Direccion: </label>
+                        <input type="text" class="form-control form-control-sm" id="direccion" placeholder="Direccion" value="">
                     </div>
                     <br>
                 </tr></td>
@@ -95,21 +95,21 @@
                     <!--<td><label for="">Clave: &nbsp</label></td>
                     <td><input type="text" id="clave" value=""></td>-->
                     <div class="col-auto">
-                        <label for="" class="visually-hidden">Password: </label>
-                        <input type="text" class="form-control form-control-sm" id="clave" placeholder="Password" value="">
+                        <label for="" class="visually-hidden">Telefono: </label>
+                        <input type="text" class="form-control form-control-sm" id="telefono" placeholder="Telefono" value="">
                     </div>
                 </tr></td>
                 <tr>
                     <td>
                         <div class="col-auto">
-                            <button type="button" id="agregarU" class="btn btn-danger mb-3" value="Agregar">Agregar</button>
+                            <button type="button" id="agregarC" class="btn btn-danger mb-3" value="Agregar">Agregar</button>
                         </div>
                     
                         <!--<input type="button" value="Agregar" id="agregarU"></td>-->
                     </td>
                     <td>
                         <div class="col-auto">
-                            <button type="button" id="eliminarU" class="btn btn-danger mb-3" value="Eliminar">Eliminar</button>
+                            <button type="button" id="eliminarC" class="btn btn-danger mb-3" value="Eliminar">Eliminar</button>
                         </div>
                     </td>        
                     <!--<td><input type="button" value="Eliminar" id="eliminarU"></td>
@@ -117,12 +117,12 @@
                     <td><input type="button" value="Listar" id="listarU"></td>-->
                     <td>
                     <div class="col-auto">
-                        <button type="button" id="actualizarU" class="btn btn-danger mb-3" value="Actualizar">Actualizar</button>
+                        <button type="button" id="actualizarC" class="btn btn-danger mb-3" value="Actualizar">Actualizar</button>
                     </div>
                     </td>
                     <td>
                     <div class="col-auto">
-                        <button type="button" id="listarU" class="btn btn-danger mb-3" value="Listar">Listar</button>
+                        <button type="button" id="listarC" class="btn btn-danger mb-3" value="Listar">Listar</button>
                     </div>
                     </td>
                     <td>
