@@ -12,7 +12,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
 <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-<script src="/js/User.js"></script>
+<script src="/js/Productos.js"></script>
 </head>
 <body>
     <header class="header" id="inicio">
@@ -42,8 +42,103 @@
              </h1>
              <div class="contenedor-usuarios">
 				<div>
-        <form action="" class="form" class="row g-3" id="formulario">
-            
+        <form action="/cargarArchivo" class="form row g-3" method="POST" enctype="multipart/form-data" id="form_subir">
+            <table>
+                <div>
+            		<label for="">Subida de Archivo CSV: </label>
+            		<input type="file" class="form-control form-control-lg" name="archivoCSV" accept=".csv">
+            		<br>
+                </div>    
+                <!-- Barra de carga animar despues <div class="barra">
+                    <div class="barra_azul" id="barra_estado">
+                        <span></span>
+                    </div>
+                </div>-->
+                <div>
+            		<button type="submit" class="btn btn-dark mb-3" value="Enviar">Subir Archivo</button>                    
+            	</div>
+            </table>
+        </form>            
+        <form action="" class="form row g-3" id="formulario">
+            <table> 
+                <tr>
+                <td>
+                    <div class="col-auto">
+                    <label for="" class="visually-hidden">Codigo de Producto: </label>
+                    <input type="text" class="form-control form-control-lg" id="id" placeholder="Codigo de Producto" value="">
+                    </div>
+                    <br>
+                </td>
+                <td>
+                    <div class="col-auto">
+                        <button type="button" id="buscarP" class="btn btn-success mb-3" value="Buscar">Buscar</button>
+                    </div>
+                    <br>
+                </td>
+                </tr>
+                <td>
+                    <div class="col-auto">
+                        <label for="" class="visually-hidden">Nombre de Producto: </label>
+                        <input type="text" class="form-control form-control-sm" id="nombre_p" placeholder="Nombre de Producto" value="">
+                    </div>
+                    <br>
+                </td>
+                </tr>
+                <tr><td>
+                    <div class="col-auto">
+                        <label for="" class="visually-hidden">Nit Proveedor: </label>
+                        <input type="text" class="form-control form-control-sm" id="nit_p" placeholder="Nit Proveedor" value="">
+                    </div>
+                    <br>
+                </tr></td>
+                <tr><td>
+                    <div class="col-auto">
+                        <label for="" class="visually-hidden">Precio de Compra: </label>
+                        <input type="text" class="form-control form-control-sm" id="p_compra" placeholder="Precio de Compra" value="">
+                    </div>
+                    <br>
+                </tr></td>
+                <tr><td>
+                    <div class="col-auto">
+                        <label for="" class="visually-hidden">Iva de Compra: </label>
+                        <input type="text" class="form-control form-control-sm" id="iva" placeholder="Iva de Compra" value="">
+                    </div>
+                    <br>
+                </tr></td>
+                <tr><td>
+                    <div class="col-auto">
+                        <label for="" class="visually-hidden">Precio de Venta: </label>
+                        <input type="text" class="form-control form-control-sm" id="p_venta" placeholder="Precio de Venta" value="">
+                    </div>
+                </tr></td>
+                <tr>
+                    <td>
+                        <div class="col-auto">
+                            <button type="button" id="agregarP" class="btn btn-danger mb-3" value="Agregar">Agregar</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="col-auto">
+                            <button type="button" id="eliminarP" class="btn btn-danger mb-3" value="Eliminar">Eliminar</button>
+                        </div>
+                    </td>
+                    <td>
+                    <div class="col-auto">
+                        <button type="button" id="actualizarP" class="btn btn-danger mb-3" value="Actualizar">Actualizar</button>
+                    </div>
+                    </td>
+                    <td>
+                    <div class="col-auto">
+                        <button type="button" id="listarP" class="btn btn-danger mb-3" value="Listar">Listar</button>
+                    </div>
+                    </td>
+                    <td>
+                    <div class="col-auto">
+                        <button type="button" class="btn btn-outline-dark mb-3" onclick="limpiarFormulario()" value="Limpiar formulario">Limpiar formulario</button>
+                    </div>
+                    </td>
+                </tr>
+            </table>
 
 
 

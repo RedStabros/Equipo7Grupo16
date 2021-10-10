@@ -1,12 +1,8 @@
 package com.DTO.TecnoGamers;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
 
-//@Entity
 public class UsuarioVO {
 	
-	//@Id
 	private Long cedula_usuario;
 	private String nombre_usuario;
 	private String email_usuario;

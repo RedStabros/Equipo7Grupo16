@@ -45,7 +45,6 @@ public class UsuarioDAO {
 		Conexion conex = new Conexion();
 		try {
 			PreparedStatement consulta = conex.getConnection().prepareStatement("SELECT * FROM usuarios WHERE cedula_usuario=?");
-			//ResultSet res = consulta.executeQuery();
 			
 			consulta.setLong(1,cedula_usuario);
 			ResultSet res = consulta.executeQuery();
@@ -126,8 +125,6 @@ public class UsuarioDAO {
 			try {
 				Statement consulta = (Statement) conex.getConnection().createStatement();
 				String SQL = "DELETE FROM usuarios WHERE cedula_usuario="+cedula_usuario;
-				//((java.sql.Statement) consulta).executeUpdate(SQL);
-				//((java.sql.Statement) consulta).close();
 				
 				consulta.executeUpdate(SQL);
 				consulta.close();

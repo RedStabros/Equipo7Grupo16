@@ -45,8 +45,7 @@ public class ProveedorDAO {
 		Conexion conex = new Conexion();
 		try {
 			PreparedStatement consulta = conex.getConnection().prepareStatement("SELECT * FROM proveedores WHERE nit=?");
-			//ResultSet res = consulta.executeQuery();
-			
+						
 			consulta.setLong(1,nit);
 			ResultSet res = consulta.executeQuery();
 			
@@ -127,8 +126,6 @@ public class ProveedorDAO {
 			try {
 				Statement consulta = (Statement) conex.getConnection().createStatement();
 				String SQL = "DELETE FROM proveedores WHERE nit="+nit;
-				//((java.sql.Statement) consulta).executeUpdate(SQL);
-				//((java.sql.Statement) consulta).close();
 				
 				consulta.executeUpdate(SQL);
 				consulta.close();

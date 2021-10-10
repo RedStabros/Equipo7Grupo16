@@ -161,6 +161,37 @@ header {
     padding-left: 30px;
 }
 
+.barra {
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, .2);
+    height: 25px;
+}
+
+.barra_azul {
+    background-color: #247CC0;
+    border-radius: 10px;
+    display: block;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    width: 0%;
+}
+
+.barra_verde {
+    background-color: #2EA265 !important;
+}
+
+.barra_roja {
+    background-color: #DE3152 !important;
+}
+
+span {
+    color: #fff;
+    font-weight: bold;
+    line-height: 25px;
+}
+
 @media (max-width: 1400px) {
 
     .line {

@@ -23,10 +23,6 @@ public class mainapp {
 		                    + "Usuario : " + rs.getString("usuario") + "\n"
 							+ "Clave : " + rs.getString("clave")+ "\n");
 					
-					//System.out.println("Id Usuario: " + rs.getInt("id_usuario") + "\n"
-		            //          + "Usuario : " + rs.getString("usuario")+ "\n"
-		            //          + "Clave : " + rs.getString("clave") + "\n");
-		               
 				}
 						
 			} catch (Exception e) {

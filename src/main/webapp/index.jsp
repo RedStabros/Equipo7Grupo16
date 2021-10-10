@@ -29,13 +29,11 @@
                         </div>
                         <div class="form-group">
                          	<br>
-                            <label>Usuario:</label>
-                           <%-- <input type="text" name="txtuser" class="form-control" Id="usuario" value="">      --%>   
+                            <label>Usuario:</label> 
                               <td><input Id="usuario" type="text" value="" class="form-control"></td>                 
                         </div>
                         <div class="form-group">
                             <label>Password:</label>
-                           <%-- <input type="password" name="txtpass" class="form-control" Id="clave" value="">--%>  
                            <td><input Id="clave" type="password" value="" class="form-control"></td>
                             <br>
                         </div>

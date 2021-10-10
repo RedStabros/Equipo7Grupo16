@@ -4,7 +4,6 @@ import java.sql.*;
 
 public class Conexion {
 	static String bd =  "tecno_tienda"; 
-	//static String bd =  "tiendagenerica1"; 
 	   static String login = "root"; 
 	   static String password = "1234"; 
 	 
