@@ -14,6 +14,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
 <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="header" id="inicio">
@@ -25,7 +26,7 @@
                 <a href="html/proveedores.html" target="_self" class="nav-menu-link">Modulo de Proveedores</a>
                 <a href="html/productos.html" target="_self" class="nav-menu-link">Modulo de Productos</a>
                 <a href="html/ventas.html" target="_self" class="nav-menu-link">Modulo de Ventas</a>
-                <a href="html/reportes.html" target="_self" class="nav-menu-link">Consultas y Reportes</a>
+                <a href="html/reportes.html" target="_self" class="nav-menu-link">Consultas y Reportes</a>                
             </nav>
             <div class="contenedro head">                
 	            <h1 class="titulo">Bienvenido al Sistema</h1>
@@ -33,6 +34,23 @@
             </div>
             <div class="logo">
                 <img src="img/LOGO_PNG.png" alt="">
+            </div>
+            <div>
+            	<div class="dropdown">
+				  <a class="btn btn-danger dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+				   Usuario Activo
+				  </a>				
+				  <ul class="dropdown-menu text-center" aria-labelledby="dropdownMenuLink">
+				    <li><a class="dropdown-item" href="#">
+                        <img src="img/usuario.png" alt="100" width="100">
+                    </a></li>
+				    <li><a class="dropdown-item" href="#">Usuario</a></li>
+				    <li><a class="dropdown-item" href="#">usuario@gmail.com</a></li>
+                    <div class="dropdown-divider"></div>
+                    <li><a class="dropdown-item" href="index.jsp">Salir</a></li>
+				  </ul>
+				</div>
+				</div>
             </div>
         </div>
     </header>
@@ -66,5 +84,6 @@
         </section>
     </footer>
     <script src="js/menu.js"></script>
+
 </body>
 </html>

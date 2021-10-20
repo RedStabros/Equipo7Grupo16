@@ -4,6 +4,8 @@ import java.beans.*;
 import java.sql.*;
 import java.sql.Statement;
 import java.util.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import com.DTO.TecnoGamers.*;
 
@@ -167,6 +169,30 @@ public class ProductosDAO {
 			return swActualizar;
 		}
 			
+	//////////////////////////////////////////
 		
+		public List Listar() {
+		     
+	        List<ProductosVO> lista = new ArrayList();
+	        Conexion conex = new Conexion();
+	        
+	        try {
+	        	Statement consulta = (Statement) conex.getConnection().createStatement();
+	        	ResultSet res = consulta.executeQuery(null);
+	            while (res.next()) {
+	                ProductosVO producto = new ProductosVO();
+	                producto.setCodigo_producto(res.getLong("id"));
+	                producto.setNombre_producto(res.getString("nombreproducto")); 
+	                producto.setPrecio_venta(res.getDouble("precio"));
+	                producto.setIva_compra(res.getDouble("iva"));
+	                lista.add(producto);
+
+	            }
+	        } catch (SQLException ex) {
+	            Logger.getLogger(UsuarioDAO.class.getName()).log(Level.SEVERE, null, ex);
+	        }
+	        return lista;
+
+	    }
 	
 }

@@ -63,5 +63,11 @@ public class ProductosVO {
 	public void setPrecio_venta(Double precio_venta) {
 		this.precio_venta = precio_venta;
 	}
-	
+
+
+	public void setCantidad_producto(Long l) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

@@ -12,7 +12,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
 <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-<script src="/js/User.js"></script>
+<script src="/js/Reportes.js"></script>
 </head>
 <body>
     <header class="header" id="inicio">
@@ -43,15 +43,25 @@
              </h1>
              <div class="contenedor-usuarios">
 				<div>
-        <form action="" class="form" class="row g-3" id="formulario">
-            
-
-
-            
+        <form action="" class="form" class="row g-3" id="">          
+        
+        <div class="row justify-content-center">
+            <div class="btn-group botonera" role="group">
+                <button type="button" class="btn btn-dark" id="listarU">Listado de Usuarios</button>
+                <button type="button" class="btn btn-danger" id="listarC">Listado de clientes</button>
+                <button type="button" class="btn btn-info" id="buscarVC">Ventas por Cliente</button>
+              </div>
+              <br>
+              <div class="justify-content-end espacioC">
+                <label for="" class="visually-hidden">Cedula Cliente </label>
+                <br>
+                <input type="text" class="form-control form-control-lg" id="idC" placeholder="Cedula Cliente" value="">
+                </div>
+        </div>           
         </form>
         </div>
 <!--Info JSON-->
-        <div id="mensaje" class="visiondb row g-3 col-auto table table-dark table-hover alert alert-light">
+        <div id="mensaje" class="visiondb row g-3 col-auto table table-secondary table-hover alert alert-light">
 
         </div>
         </div>

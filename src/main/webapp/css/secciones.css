@@ -132,6 +132,16 @@ header {
     margin-left: 30px;
 }
 
+.btn2 {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.btn3 {
+    margin-top: 10px;
+    margin-left: 20%;
+}
+
 .line {
     width: 85%;
     max-width: 1000px;
@@ -140,6 +150,25 @@ header {
     background-color: rgb(238, 95, 28);
     margin-bottom: 20px;
     margin-left: 25%;
+}
+
+.line2 {
+    justify-content: center;
+    align-items: center;
+    margin-top: 4%;
+    margin-bottom: 3%;
+    margin-left: 5%;
+    width: 90%;
+    max-width: 1200px;
+    height: 2px;
+    background: gray;
+}
+
+.modulo-precio {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
 }
 
 .menu-legal a {
@@ -190,6 +219,18 @@ span {
     color: #fff;
     font-weight: bold;
     line-height: 25px;
+}
+
+.botonera button{
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+
+.espacioC {
+    width: 30%;
+    margin-left: 65%;
 }
 
 @media (max-width: 1400px) {
