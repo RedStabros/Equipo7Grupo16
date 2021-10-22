@@ -16,7 +16,7 @@ public class ProveedorDAO {
 		ArrayList<ProveedorVO> misProveedores = new ArrayList<ProveedorVO>();
 		Conexion conex = new Conexion();
 		try {
-			PreparedStatement consulta = conex.getConnection().prepareStatement("SELECT * FROM Proveedores");
+			PreparedStatement consulta = conex.getConnection().prepareStatement("SELECT * FROM proveedores");
 			ResultSet res = consulta.executeQuery();
 			
 			while(res.next()) {

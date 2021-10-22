@@ -15,6 +15,7 @@ public class DetalleVentaVO implements Serializable{
 	private Double valor_total;
 	private Double valor_venta;
 	private Double valoriva;
+	
 	public Integer getCodigo_detalle_venta() {
 		return codigo_detalle_venta;
 	}

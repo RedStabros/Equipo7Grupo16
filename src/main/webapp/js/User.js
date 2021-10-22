@@ -8,7 +8,7 @@
         $.get("http://localhost:8080/listausuarios",function(data, status){
             if(status=="success"){
                 let longitud = data.length;
-                let salida ="<table border='0'>";
+                let salida ="<table border='0' class='table table-dark table-striped table-hover'>";
                 salida = salida + "<tr><th>CEDULA</th><th>NOMBRE</th><th>EMAIL</th><th>USUARIO</th><th>CLAVE</th></tr>";
                 for(let i=0;i<longitud;i++){
                     salida = salida + "<tr>";

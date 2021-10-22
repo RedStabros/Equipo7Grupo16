@@ -7,7 +7,7 @@ $(document).ready(function(){
 		$.get("http://localhost:8080/listaproveedores",function(data, status){
 			if(status=="success"){
 				let longitud = data.length;
-				let salida ="<table border='0'>";
+				let salida ="<table border='0' class='table table-dark table-striped table-hover'>";
 				salida = salida + "<tr><th>NIT</th><th>CIUDAD</th><th>DIRECCION</th><th>NOMBRE</th><th>TELEFONO</th></tr>";
 				for(let i=0;i<longitud;i++){
 					salida = salida + "<tr>";

@@ -15,6 +15,7 @@
 <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
 <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="js/login.js"></script>
 </head>
 <body>
     <header class="header" id="inicio">
@@ -44,8 +45,8 @@
 				    <li><a class="dropdown-item" href="#">
                         <img src="img/usuario.png" alt="100" width="100">
                     </a></li>
-				    <li><a class="dropdown-item" href="#">Usuario</a></li>
-				    <li><a class="dropdown-item" href="#">usuario@gmail.com</a></li>
+				    <!--<li><a class="dropdown-item" href="#"><input type="text" name="" id="userL"></a></li>
+				    <li><a class="dropdown-item" href="#">usuario@gmail.com</a></li>-->
                     <div class="dropdown-divider"></div>
                     <li><a class="dropdown-item" href="index.jsp">Salir</a></li>
 				  </ul>
@@ -67,6 +68,8 @@
                 <a href="html/ventas.html"><img src="img/user2.png" alt="" class="img-galeria-modulos"></a>
                 <a href="html/reportes.html"><img src="img/reportes1.png" alt="" class="img-galeria-modulos"></a>
             </div>
+            <br>
+            <br>
          </section>
     </main>
     <footer>

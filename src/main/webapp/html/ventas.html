@@ -46,6 +46,22 @@
             <div class="logo">
                 <img src="../img/LOGO_PNG.png" alt="">
             </div>
+            <div>
+            	<div class="dropdown">
+				  <a class="btn btn-danger dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+				   Usuario Activo
+				  </a>				
+				  <ul class="dropdown-menu text-center" aria-labelledby="dropdownMenuLink">
+				    <li><a class="dropdown-item" href="#">
+                        <img src="../img/usuario.png" alt="100" width="100">
+                    </a></li>
+				    <!--<li><a class="dropdown-item" href="#"><input type="text" name="" id="userL"></a></li>
+				    <li><a class="dropdown-item" href="#">usuario@gmail.com</a></li>-->
+                    <div class="dropdown-divider"></div>
+                    <li><a class="dropdown-item" href="../index.jsp">Salir</a></li>
+				  </ul>
+				</div>
+				</div>
         </div>
     </header>
     <main class="contenido">
@@ -347,6 +363,7 @@
 				var xhr = new XMLHttpRequest();
 				xhr.open("POST", "http://localhost:8080/registrarventa");
 				xhr.send(formData);
+				alert("Se registro la Venta, recargue para una nueva venta");
 
                 setTimeout(
                 function() {							

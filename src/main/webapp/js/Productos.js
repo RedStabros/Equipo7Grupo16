@@ -7,7 +7,7 @@
         $.get("http://localhost:8080/listaproductos",function(data, status){
             if(status=="success"){
                 let longitud = data.length;
-                let salida ="<table border='0'>";
+                let salida ="<table border='0' class='table table-dark table-striped table-hover'>";
                 salida = salida + "<tr><th>COODIGO_PRODUCTO</th><th>NOMBRE</th><th>PROVEEDOR</th><th>PRECIO_COMPRA</th><th>IVA_COMPRA</th><th>PRECIO_VENTA</th></tr>";
                 for(let i=0;i<longitud;i++){
                     salida = salida + "<tr>";

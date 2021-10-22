@@ -11,12 +11,13 @@ $(document).ready(function(){
 			// data1 = $.parseJSON( data );
 			if(data.existe==true)
 			{
-			alert("Bienvenido "+elUsuario);
+			alert("Bienvenido al sistema Usuario: "+elUsuario);
 			window.location.href = "principal.jsp";
+			
 			}
 			else
 			{
-			alert("No existe el Usuario bb");
+			alert("No existe el Usuario");
 			window.location.href = "index.jsp";
 			}
 			});
@@ -26,4 +27,6 @@ $(document).ready(function(){
 		$("#usuario").val(valores[0]);
 		$("#clave").val(valores[1]);
 	}
+
+	
 });
